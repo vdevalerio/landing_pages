@@ -13,7 +13,10 @@ $nav = [
 ];
 
 $logos = [
-    'logo-1' => './images/logo-1.png',
-]
+    'logo-1' => [
+        'title' => 'Company Name',
+        'path' =>'./images/logo.png',
+    ],
+];
 
 ?>
