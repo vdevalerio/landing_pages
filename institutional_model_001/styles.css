@@ -5,6 +5,7 @@
     --quarternary-color: #003366;
     --text-color: black;
     --font-family: Arial, sans-serif;
+    --default-blocks-padding: 20px 200px;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 header {
     background-color: var(--secondary-color);
-    padding: 20px 40px;
+    padding: var(--default-blocks-padding);
     text-align: center;
     position: sticky;
     top: 0;
@@ -121,6 +122,52 @@ nav a:hover {
     object-fit: fill;
     border-radius: 8px;
     display: block;
+}
+
+.index-main {
+    padding: var(--default-blocks-padding);
+    margin: 5% 0%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.index-main-column-1, .index-main-column-2 {
+    width: 50%;
+}
+
+.index-main-column-1 {
+    font-size: 2vh;
+    text-align: justify;
+}
+
+.index-main-column-2 {
+    padding: 0% 5%;
+}
+
+.index-main-image {
+    width: 100%;
+}
+
+.button-1 {
+    width: 100px;
+    padding: 15px;
+    margin-top: 20px;
+
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.button-1:hover {
+    background-color: var(--quarternary-color);
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.button-1 > a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 footer {
