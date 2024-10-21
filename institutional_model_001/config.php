@@ -2,6 +2,7 @@
 // config.php
 
 // Include your environment settings
+include 'helpers.php';
 include 'env.php';
 
 $fromEnv = [

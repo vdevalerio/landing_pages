@@ -18,8 +18,8 @@
             </div>
 
             <div class="index-main-column-2">
-                <img class="index-main-image" src="<?php echo htmlspecialchars($logos['logo1']['path']); ?>"
-                    alt="<?php echo htmlspecialchars($logos['logo1']['title']); ?>"
+                <img class="index-main-image" src="<?php echo htmlspecialchars($logos['main']['path']); ?>"
+                    alt="<?php echo htmlspecialchars($logos['main']['title']); ?>"
                 >
             </div>
         </div>
