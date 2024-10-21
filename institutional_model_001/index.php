@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
     <div class="main-section">
-        <?php include './components/slider.php'; ?>
+        <?php include './components/image_slider.php'; ?>
 
         <div class="index-main">
             <div class="index-main-column-1">

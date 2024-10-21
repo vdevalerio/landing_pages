@@ -1,10 +1,10 @@
-<div class="slider">
+<div class="image-slider">
     <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
 
-    <div class="slides">
+    <div class="image-slider-slides">
         <?php foreach ($logos as $logo): ?>
-            <div class="slide fade">
-                <img class="slide-image" src="<?php echo htmlspecialchars($logo['path']); ?>"
+            <div class="image-slider-slide">
+                <img class="image-slider-image" src="<?php echo htmlspecialchars($logo['path']); ?>"
                     alt="<?php echo htmlspecialchars($logo['title']); ?>"
                 >
             </div>
