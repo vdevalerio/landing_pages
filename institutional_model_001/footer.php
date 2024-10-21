@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; <?php echo $footer_copy; ?></p>
+    <p>&copy; <?php echo $footerCopy; ?></p>
 </footer>
 
 </body>

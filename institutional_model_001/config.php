@@ -6,13 +6,13 @@ include 'env.php';
 
 $fromEnv = [
     'lang' => $lang,
-    'company_name' => $company_name,
+    'companyName' => $companyName,
     'texts' => $texts,
-    'card_slider' => $card_slider,
+    'cardSlider' => $cardSlider,
     'buttons' => $buttons,
     'nav' => $nav,
     'logos' => $logos,
-    'footer_copy' => $footer_copy,
+    'footerCopy' => $footerCopy,
 ];
 
 file_put_contents('config.json', json_encode($fromEnv));

@@ -71,12 +71,12 @@ async function initializeCarousel() {
         .then(response => response.json())
         .then(data => {
 
-            cardSliderData = data.card_slider;
-            visibleCards = cardSliderData.visible_cards;
+            cardSliderData = data.cardSlider;
+            visibleCards = cardSliderData.visibleCards;
             cardWidthPercent  = cardSliderData.card_width_percentage;
-            gapWidthPercent = cardSliderData.gap_width_percentage;
-            transitionDelayMS = cardSliderData.transition_delay_ms;
-            sliderIntervalMS = cardSliderData.slider_interval_ms;
+            gapWidthPercent = cardSliderData.gapWidthPercentage;
+            transitionDelayMS = cardSliderData.transitionDelayMS;
+            sliderIntervalMS = cardSliderData.sliderIntervalMS;
 
             setVisibleCards(visibleCards, gapWidthPercent);
             duplicateCards();

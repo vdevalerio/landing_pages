@@ -6,7 +6,7 @@
         <div class="index-main">
             <div class="index-main-column-1">
                 <h1 class="index-main-title">
-                    <?php echo $company_name ?>
+                    <?php echo $companyName ?>
                 </h1>
                 <?php echo $texts['index']['main'] ?>
 
@@ -18,8 +18,8 @@
             </div>
 
             <div class="index-main-column-2">
-                <img class="index-main-image" src="<?php echo htmlspecialchars($logos['logo-1']['path']); ?>"
-                    alt="<?php echo htmlspecialchars($logos['logo-1']['title']); ?>"
+                <img class="index-main-image" src="<?php echo htmlspecialchars($logos['logo1']['path']); ?>"
+                    alt="<?php echo htmlspecialchars($logos['logo1']['title']); ?>"
                 >
             </div>
         </div>

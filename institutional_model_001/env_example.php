@@ -2,8 +2,8 @@
 
 $lang = 'en';
 
-$company_name = 'Company';
-$footer_copy = "2024 Company - All the rights reserved.";
+$companyName = 'Company';
+$footerCopy = "2024 Company - All the rights reserved.";
 
 $nav = [
     'index' => 'Home',
@@ -13,7 +13,7 @@ $nav = [
 ];
 
 $logos = [
-    'logo-1' => [
+    'logo1' => [
         'title' => 'Company Name',
         'path' =>'./images/logo.png',
     ],
