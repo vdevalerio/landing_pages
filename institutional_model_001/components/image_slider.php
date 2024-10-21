@@ -14,4 +14,4 @@
     <a class="next" onclick="changeSlide(1)">&#10095;</a>
 </div>
 
-<script src="./js/sliderScript.js"></script>
+<script src="./js/image_slider_script.js"></script>

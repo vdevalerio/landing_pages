@@ -38,4 +38,4 @@
     <a class="next" onclick="moveCarousel(1, <?php echo $cardSlider['transitionDelayMS']?>)">&#10095;</a>
 </div>
 
-<script src="./js/cardSliderScript.js"></script>
+<script src="./js/card_slider_script.js"></script>

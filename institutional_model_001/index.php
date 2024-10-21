@@ -25,7 +25,7 @@
         </div>
 
         <div class="index-sub">
-            <?php include './components/cardSlider.php'; ?>
+            <?php include './components/card_slider.php'; ?>
         </div>
 
     </div>
