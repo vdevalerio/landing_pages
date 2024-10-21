@@ -124,12 +124,18 @@ nav a:hover {
     display: block;
 }
 
-.index-main {
+.index-main, .index-sub {
     padding: var(--default-blocks-padding);
     margin: 5% 0%;
+}
 
+.index-main {
     display: flex;
     flex-direction: row;
+}
+
+.index-main-title {
+
 }
 
 .index-main-column-1, .index-main-column-2 {
@@ -147,6 +153,70 @@ nav a:hover {
 
 .index-main-image {
     width: 100%;
+}
+
+.index-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-slider {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    overflow: hidden;
+}
+
+.cards {
+    width: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards > div {
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.card-1 {
+    background-color: red;
+}
+
+.card-2 {
+    background-color: yellow;
+}
+
+.card-3 {
+    background-color: blue;
+}
+
+.card-4 {
+    background-color: green;
+}
+
+.card-5 {
+    background-color: pink;
+}
+
+.card-6 {
+    background-color: green;
+}
+
+.card-7 {
+    background-color: pink;
+}
+
+.card-8 {
+    background-color: green;
+}
+
+.card-9 {
+    background-color: yellow;
 }
 
 .button-1 {

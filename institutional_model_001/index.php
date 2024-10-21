@@ -5,14 +5,14 @@
 
         <div class="index-main">
             <div class="index-main-column-1">
-                <h1>
+                <h1 class="index-main-title">
                     <?php echo $company_name ?>
                 </h1>
                 <?php echo $texts['index']['main'] ?>
 
                 <div class="button-1">
                     <a href="about.php">
-                        Saiba mais
+                        <?php echo $buttons['more'] ?>
                     </a>
                 </div>
             </div>
@@ -24,6 +24,12 @@
             </div>
         </div>
 
-    </div>
+        <div class="index-sub">
+            <h1 class="index-sub-title">
+                <?php echo $texts['index']['sub']['members'] ?>
+            </h1>
+            <?php include './components/cardSlider.php'; ?>
+        </div>
 
+    </div>
 <?php include 'footer.php'; ?>
