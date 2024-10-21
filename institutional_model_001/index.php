@@ -25,9 +25,6 @@
         </div>
 
         <div class="index-sub">
-            <h1 class="index-sub-title">
-                <?php echo $texts['index']['sub']['members'] ?>
-            </h1>
             <?php include './components/cardSlider.php'; ?>
         </div>
 

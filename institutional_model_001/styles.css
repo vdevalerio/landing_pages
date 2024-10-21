@@ -160,6 +160,10 @@ nav a:hover {
     flex-direction: column;
 }
 
+.card-slider-title {
+
+}
+
 .card-slider {
     width: 100%;
 
@@ -174,55 +178,60 @@ nav a:hover {
     width: inherit;
 
     display: flex;
-    align-items: center;
+    flex-direction: row;
+
+    align-items: stretch;
     justify-content: space-between;
+
 }
 
-.cards > div {
-    height: 300px;
+.card {
     flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-1 {
-    background-color: red;
+.card-image, .card-image > img {
+    width: 100%;
+    height: auto;
 }
 
-.card-2 {
-    background-color: yellow;
+.card-text {
+    text-align: justify;
 }
 
-.card-3 {
-    background-color: blue;
+.card-button {
+    width: 30%;
+    padding: 15px;
+    border-radius: 5%;
+    margin-top: 20px;
+    text-align: center;
+
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
-.card-4 {
-    background-color: green;
+.card-button:hover {
+    background-color: var(--quarternary-color);
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
-.card-5 {
-    background-color: pink;
-}
-
-.card-6 {
-    background-color: green;
-}
-
-.card-7 {
-    background-color: pink;
-}
-
-.card-8 {
-    background-color: green;
-}
-
-.card-9 {
-    background-color: yellow;
+.card-button > a {
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .button-1 {
     width: 100px;
     padding: 15px;
     margin-top: 20px;
+    text-align: center;
 
     background-color: var(--primary-color);
 

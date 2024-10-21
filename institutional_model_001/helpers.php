@@ -1,7 +1,7 @@
 <?php
 
-function getLogosFromDir($dir) {
-    $logos = [];
+function getImagesFromDir($dir) {
+    $images = [];
     $files = scandir($dir);
 
     foreach ($files as $file) {
@@ -19,12 +19,12 @@ function getLogosFromDir($dir) {
 
             $title = ucwords(str_replace(['-', '_'], ' ', $trimmedName));
 
-            $logos[$prefix] = [
+            $images[$prefix] = [
                 'title' => $title,
                 'path' => $filePath,
             ];
         }
     }
 
-    return $logos;
+    return $images;
 }

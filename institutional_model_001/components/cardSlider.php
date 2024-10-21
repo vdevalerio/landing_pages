@@ -1,19 +1,41 @@
-<div class="card-slider">
-    <a class="prev" onclick="moveCarousel(-1, 500)">&#10094;</a>
+<h1 class="card-slider-title">
+    <?php echo $cardSlider['title'] ?>
+</h1>
 
+<div class="card-slider">
+    <a class="prev" onclick="moveCarousel(-1, <?php echo $cardSlider['transitionDelayMS']?>)">&#10094;</a>
+
+    <?php
+        $cardImages = getImagesFromDir($cardSlider['imagesPath']);
+    ?>
     <div class="cards">
-        <div class="card card-1">1</div>
-        <div class="card card-2">2</div>
-        <div class="card card-3">3</div>
-        <div class="card card-4">4</div>
-        <div class="card card-5">5</div>
-        <div class="card card-6">6</div>
-        <div class="card card-7">7</div>
-        <div class="card card-8">8</div>
-        <div class="card card-9">9</div>
+        <?php foreach ($cardImages as $index => $image): ?>
+
+        <div class="card">
+            <?php
+                $index = htmlspecialchars((int) trim($index, 'card') - 1);
+                $path = htmlspecialchars($image['path']);
+                $title = htmlspecialchars($image['title']);
+            ?>
+            <div class="card-image" >
+                <img src="<?php echo $path; ?>"
+                alt="<?php echo htmlspecialchars($title); ?>"
+                >
+            </div>
+            <div class="card-text">
+                <p> <?php echo $cardSlider['texts'][$index] ?> </p>
+            </div>
+
+            <div class="card-button">
+                <a href="<?php echo $cardSlider['buttons'][$index]['link'] ?>">
+                    <?php echo $cardSlider['buttons'][$index]['text'] ?>
+                </a>
+            </div>
+        </div>
+        <?php endforeach; ?>
     </div>
 
-    <a class="next" onclick="moveCarousel(1, 500)">&#10095;</a>
+    <a class="next" onclick="moveCarousel(1, <?php echo $cardSlider['transitionDelayMS']?>)">&#10095;</a>
 </div>
 
 <script src="./js/cardSliderScript.js"></script>
