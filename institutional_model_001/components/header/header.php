@@ -1,4 +1,9 @@
-<?php include 'config.php'; ?>
+<?php
+    include 'config.php';
+    $currentDir = '/components/header/';
+?>
+
+<link rel="stylesheet" href="<?php echo $currentDir . 'header.css'?>">
 
 <!DOCTYPE html>
 <html lang="<?php echo $lang ?>">
@@ -18,7 +23,7 @@
             >
             <nav class="menu-items">
                 <?php foreach ($nav['items'] as $ref => $item): ?>
-                    <a href="<?php echo htmlspecialchars($ref); ?>"
+                    <a href="<?php echo '/' . htmlspecialchars($ref); ?>"
                     class="<?php echo basename($_SERVER['PHP_SELF']) == $ref ? 'active' : ''; ?>">
                         <?php echo htmlspecialchars($item); ?>
                     </a>
