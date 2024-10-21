@@ -30,7 +30,7 @@
                     <p> <?php echo $cardSlider['texts'][$index] ?> </p>
                 </div>
 
-                <div class="card-button">
+                <div class="card-button button-1">
                     <a href="<?php echo $cardSlider['buttons'][$index]['link'] ?>">
                         <?php echo $cardSlider['buttons'][$index]['text'] ?>
                     </a>

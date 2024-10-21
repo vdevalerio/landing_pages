@@ -6,7 +6,7 @@
 
         <p> <?php echo $textImage['text']; ?> </p>
 
-        <div class="button-1">
+        <div class="text-image-button button-1">
             <a href="<?php echo $textImage['button']['link'] ?>">
                 <?php echo $textImage['button']['text'] ?>
             </a>

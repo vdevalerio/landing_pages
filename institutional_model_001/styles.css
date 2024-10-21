@@ -202,33 +202,10 @@ nav a:hover {
     text-align: justify;
 }
 
-.card-button {
-    width: 30%;
-    padding: 15px;
-    border-radius: 5%;
-    margin-top: 20px;
-    text-align: center;
-
-    background-color: var(--primary-color);
-
-    cursor: pointer;
-    transition: color 0.5s ease, background-color 0.5s ease;
-}
-
-.card-button:hover {
-    background-color: var(--quarternary-color);
-    transition: color 0.5s ease, background-color 0.5s ease;
-}
-
-.card-button > a {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
 .button-1 {
-    width: 100px;
-    padding: 15px;
-    margin-top: 20px;
+    width: 30%;
+    padding: 2% 0%;
+    margin-top: 4%;
     text-align: center;
 
     background-color: var(--primary-color);
@@ -245,6 +222,14 @@ nav a:hover {
 .button-1 > a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+.text-image-button {
+
+}
+
+.card-button {
+
 }
 
 footer {
