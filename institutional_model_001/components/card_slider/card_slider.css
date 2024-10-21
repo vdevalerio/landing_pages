@@ -1,0 +1,47 @@
+.card-slider {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    overflow: hidden;
+}
+
+.card-slider-title {
+
+}
+
+.cards {
+    width: inherit;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+
+.card {
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-image, .card-image > img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-button {
+
+}

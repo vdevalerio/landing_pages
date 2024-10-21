@@ -1,3 +1,9 @@
+<?php
+    $currentDir = '/components/image_slider/';
+?>
+
+<link rel="stylesheet" href="<?php echo $currentDir . 'image_slider.css'?>">
+
 <div class="image-slider">
     <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
 
@@ -19,4 +25,4 @@
     <a class="next" onclick="changeSlide(1)">&#10095;</a>
 </div>
 
-<script src="./js/image_slider_script.js"></script>
+<script src="<?php echo $currentDir . 'image_slider_script.js'?>"></script>

@@ -1,3 +1,9 @@
+<?php
+    $currentDir = '/components/text_image/';
+?>
+
+<link rel="stylesheet" href="<?php echo $currentDir . 'text_image.css'?>">
+
 <div class="text-image">
     <div class="text-image-text-column">
         <h1 class="text-image-title">

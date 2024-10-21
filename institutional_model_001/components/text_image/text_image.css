@@ -1,0 +1,29 @@
+.text-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-image-title {
+
+}
+
+.text-image-text-column, .text-image-image-column {
+    width: 50%;
+}
+
+.text-image-text-column {
+    font-size: 2vh;
+    text-align: justify;
+}
+
+.text-image-image-column {
+    padding: 0% 5%;
+}
+
+.text-image-image {
+    width: 100%;
+}
+
+.text-image-button {
+
+}

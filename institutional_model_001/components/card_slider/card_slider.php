@@ -1,3 +1,9 @@
+<?php
+    $currentDir = '/components/card_slider/';
+?>
+
+<link rel="stylesheet" href="<?php echo $currentDir . 'card_slider.css'?>">
+
 <div class="card-slider-container">
     <h1 class="card-slider-title">
         <?php echo $cardSlider['title'] ?>
@@ -46,4 +52,4 @@
     </div>
 </div>
 
-<script src="./js/card_slider_script.js"></script>
+<script src="<?php echo $currentDir . 'card_slider_script.js'?>"></script>
