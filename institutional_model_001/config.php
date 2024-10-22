@@ -6,14 +6,14 @@ include 'helpers.php';
 include 'env.php';
 
 $fromEnv = [
-    'lang' => $lang,
-    'companyName' => $companyName,
-    'texts' => $texts,
+    // 'lang' => $lang,
+    // 'companyName' => $companyName,
+    // 'faviconPath' => $faviconPath,
+    // 'nav' => $nav,
+    // 'imageSlider' => $imageSlider,
+    // 'textImage' => $textImage,
     'cardSlider' => $cardSlider,
-    'buttons' => $buttons,
-    'nav' => $nav,
-    'logos' => $logos,
-    'footerCopy' => $footerCopy,
+    // 'footerCopy' => $footerCopy,
 ];
 
 file_put_contents('config.json', json_encode($fromEnv));
