@@ -19,7 +19,7 @@
     <header>
         <div class="header-container">
             <img class="header-image" src="<?php echo $nav['imagePath'] ?>"
-            alt="<?php echo $logos['main']['title'] ?>"
+            alt=""
             >
             <nav class="menu-items">
                 <?php foreach ($nav['items'] as $ref => $item): ?>
