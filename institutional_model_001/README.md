@@ -7,3 +7,6 @@ Create image files structure like:
         - Files here should be on this format: `prefixN-image title`.
     - image_slider:
         - Files here should be on this format: `prefixN-image title`.
+
+Run in this directory:
+`$ php -S host:port`
