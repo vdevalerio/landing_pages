@@ -11,21 +11,27 @@ function getImagesFromDir($dir) {
         }
     }
 
+    $croppedFiles = getFilesFromDir($resizedDir);
+    if (!empty($croppedFiles)) {
+        return getImageInfo($croppedFiles, $resizedDir);
+    }
+
     $maxHeight = getMaxHeightOfFilesFromDir($dir);
-
     resizeImages($files, $dir, $resizedDir, $maxHeight);
+
     $resizeImages = getFilesFromDir($resizedDir);
-
     list($minResizedWidth, $minResizedHeight) = getMinDimensions($resizeImages, $resizedDir);
-
     cropImagesCentrally($resizeImages, $resizedDir, $resizedDir, $minResizedWidth, $minResizedHeight);
 
-    $images = [];
     $croppedFiles = getFilesFromDir($resizedDir);
+    return getImageInfo($croppedFiles, $resizedDir);
+}
 
-    foreach ($croppedFiles as $file) {
-        $filePath = $resizedDir . '/' . $file;
+function getImageInfo($files, $dir) {
+    $images = [];
 
+    foreach ($files as $file) {
+        $filePath = $dir . '/' . $file;
         $fileName = pathinfo($file, PATHINFO_FILENAME);
 
         if (strpos($fileName, '-') !== false) {
