@@ -14,6 +14,7 @@
     <title><?php echo $companyName ?></title>
     <link rel="icon" type="image/x-icon" href="<?php echo $faviconPath ?>">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.php">
 </head>
 <body>
     <header>

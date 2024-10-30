@@ -153,6 +153,20 @@ $contactUs = [
     ],
 ];
 
+$cssVariables = [
+    'colorPalette' => [
+        'primary' => '#FFFFFF',
+        'secondary' => '#FFFFFF',
+        'tertiary' => '#FFFFFF',
+        'quarternary' => '#FFFFFF',
+        'quinarius' => '#FFFFFF',
+        'mainText' => '#FFFFFF',
+        'subText' => '#FFFFFF',
+    ],
+    'text' => [
+        'fontFamily' => 'Arial, sans-serif',
+    ],
+];
 
 $footerCopy = "20XX {$companyName} - All rights reserved.";
 ?>
