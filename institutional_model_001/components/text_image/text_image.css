@@ -4,11 +4,12 @@
 }
 
 .text-image-title {
-
+    color: var(--text-color);
 }
 
 .text-image-text-column, .text-image-image-column {
     width: 50%;
+    color: var(--text-color);
 }
 
 .text-image-text-column {

@@ -9,7 +9,7 @@
 }
 
 .card-slider-title {
-
+    color: var(--text-color);
 }
 
 .cards {
@@ -20,7 +20,6 @@
 
     align-items: stretch;
     justify-content: space-between;
-
 }
 
 .card {
@@ -31,6 +30,8 @@
 
     justify-content: space-between;
     align-items: center;
+
+    color: var(--text-color);
 }
 
 .card-image, .card-image > img {
