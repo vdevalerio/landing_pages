@@ -1,9 +1,11 @@
 :root {
     --primary-color: #0055AA;
     --secondary-color: white;
-    --tertiary-color: #004080;
-    --quarternary-color: #003366;
-    --text-color: black;
+    --tertiary-color: #1977D5;
+    --quarternary-color: #DDDDDD;
+    --quinarius-color: #003366;
+    --text-color: #333333;
+    --observation-color: #C0C0C0;
     --font-family: Arial, sans-serif;
     --default-blocks-padding: 20px 200px;
 }
@@ -51,14 +53,19 @@ body {
     margin-top: 4%;
     text-align: center;
 
+    border: none;
+    border-radius: 4px;
+
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 100%;
 
     cursor: pointer;
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .button-1:hover {
-    background-color: var(--quarternary-color);
+    background-color: var(--quinarius-color);
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 

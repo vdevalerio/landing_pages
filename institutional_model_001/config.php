@@ -13,6 +13,7 @@ $fromEnv = [
     // 'imageSlider' => $imageSlider,
     // 'textImage' => $textImage,
     'cardSlider' => $cardSlider,
+    'contactUs' => $contactUs,
     // 'footerCopy' => $footerCopy,
 ];
 

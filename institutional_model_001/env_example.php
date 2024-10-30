@@ -106,5 +106,53 @@ $cardSlider = [
     'sliderIntervalMS' => 5000,
 ];
 
+$contactUs = [
+    'title' => 'Contact Us',
+    'info' => [
+        'phone' => '(XX) XXXXX-XXXX',
+        'email' => 'example@email.com',
+        'address' => 'Example Address Street XXX - CT - 12',
+    ],
+    'form' => [
+        'fields' => [
+            'name' => [
+                'label' => 'Name',
+                'type' => 'text',
+                'required' => true,
+                'messages' => [
+                    'required' => 'Please enter your name!',
+                ],
+            ],
+            'email' => [
+                'label' => 'E-mail',
+                'type' => 'email',
+                'required' => true,
+                'messages' => [
+                    'required' => 'We need your email to contact you!',
+                    'typeMismatch' => 'Invalid format!',
+                ],
+            ],
+            'message' => [
+                'label' => 'Message',
+                'type' => 'text',
+                'required' => false,
+                'messages' => [
+                    'required' => 'Please write a message.',
+                ],
+            ],
+        ],
+        'requiredLabel' => '(Required)',
+        'button' => [
+            'text' => 'Send',
+        ],
+    ],
+    'control' => [
+        'destiny' => 'example@email.com',
+        'subject' => 'New Contact From Site',
+        'errorMessage' => 'There was an error sending your message. Please try again.',
+    ],
+];
+
+
 $footerCopy = "20XX {$companyName} - All rights reserved.";
 ?>

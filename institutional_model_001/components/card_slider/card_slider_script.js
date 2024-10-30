@@ -22,7 +22,7 @@ function setVisibleCards(visibleCards, gapWidthPercent) {
     cardsContainer.style.gap = `${gapWidthPercent}%`;
     cards.forEach(card => {
         card.style.width = `${cardWidth}%`;
-    })
+    });
 }
 
 function duplicateCards() {
@@ -82,7 +82,7 @@ async function initializeCarousel() {
             duplicateCards();
             moveCarousel(0, transitionDelayMS);
             autoMoveCarousel(sliderIntervalMS, transitionDelayMS);
-        })
+        });
 }
 
 initializeCarousel();
